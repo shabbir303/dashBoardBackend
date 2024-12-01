@@ -71,7 +71,7 @@ export default function Blog() {
                                                             <code>{children}</code>
                                                         </pre>
                                                         <button style={{ position: "absolute", top: "0", right: "0", zIndex: "1" }} onClick={navigator.clipboard.writeText(children)}>Copy Code</button>
-                                                        
+
                                                     </div>
                                                 </div>
                                             );
@@ -86,6 +86,28 @@ export default function Blog() {
                         )}
                     />
 
+                </div>
+                {/* tags */}
+                <div className='w-100 flex flex-col flex-left mb-2'>
+                <label htmlFor="tags">Tags</label>
+                    <select name="tags" id="tags">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                        <option value="database">database</option>
+                    </select>
+                </div>
+                {/* blog status */}
+                <div className='w-100 flex flex-col flex-left mb-2'>
+                    <label htmlFor="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="">No select</option>
+                        <option value="draft">Draft</option>
+                        <option value="publish">Publish</option>
+                    </select>
+                </div>
+                <div className='w-100 mb-2'>
+                    <button type='submit' className='w-100 addwebbtn flex-center'> Save Blog </button>
                 </div>
             </form>
         </div>

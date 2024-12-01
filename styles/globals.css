@@ -873,7 +873,7 @@ button {
 .addWebsiteform button {
     width: 100%;
     padding: 1rem;
-    background-color: #8667b0;
+    background-color: #2EA2F4;
     color: #fff;
     border-radius: 10px;
     border: none;
@@ -883,7 +883,7 @@ button {
 }
 
 .addWebsiteform button:hover {
-    background-color: #7734d3;
+    background-color: #78b3dd;
 }
 
 .description button {
