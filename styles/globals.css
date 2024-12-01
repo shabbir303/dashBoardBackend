@@ -413,12 +413,12 @@ button {
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: #e6dbfb;
-    color: #5f22db;
+    background-color: #2EA2F4;
+    color: #ffffff;
     transition: 0.3s;
 }
 .logoutbtn:hover{
-    background-color: #9664f1;
+    background-color: #92b5ce;
     color: #fff;
 }
 /* ********************************************** */

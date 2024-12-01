@@ -15,7 +15,7 @@ export default function Home() {
           <meta name="description" content="Blog website backend" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-       <h1>Site is Live</h1>
+       {/* <h1>Site is Live</h1> */}
 
       </>
 
