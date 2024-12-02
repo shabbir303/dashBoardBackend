@@ -18,8 +18,8 @@ export default function Blog({
     const [slug, setSlug] = useState("");
     const [comments, setComments] = useState([]);
     const [status, setStatus] = useState("");
-    const [tags, setTags] = useState("");
-    const [blogcategory, setBlogcategory] = useState("");
+    const [tags, setTags] = useState([]);
+    const [blogcategory, setBlogcategory] = useState([]);
     const [description, setDescription] = useState("");
     const [images, setImages] = useState([]);
 
@@ -154,6 +154,7 @@ export default function Blog({
                     <select
                         name="tags"
                         id="tags"
+                        multiple
                         onChange={(e) => setTags(Array.from(e.target.selectedOptions, options => options.value))}
                         value={tags}
                     >
