@@ -10,9 +10,9 @@ const BlogSchema = new Schema({
     blogcategory:{type:String},
     tags:[{type:String}],
     status:{type:String},
-    comments:[{type:Schema.type.ObjectId, ref:"Comment"}],
+    comments:[{type:Schema.Types.ObjectId, ref:"Comment"}],
 },{
-    tymestamps:true //this will automatically manage creade at and update at
+    timestamps:true //this will automatically manage creade at and update at
 })
 
 export const Blog = models.Blog || model("Blog", BlogSchema, "blogs");
