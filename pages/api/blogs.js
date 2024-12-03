@@ -1,13 +1,13 @@
 import { mongooseConnect } from "@/lib/mongoose";
 import { Blog } from "@/models/Blog";
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 
 
 
 export default async function handle(req, res){
     await mongooseConnect();
 
-    const {method} = req.body;
+    const {method} = req;
 
     if(method === "POST"){
         const {title, slug, comments,status, tags, blogcategory, description,images} = req.body;
