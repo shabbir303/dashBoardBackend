@@ -96,10 +96,10 @@ export default function Blogs() {
                                             <td><img src={blog.images[0]} width={180} alt="image" /></td>
                                             <td><h3>{blog.title} </h3> </td>
                                             <td className="flex gap-2 flex-center">
-                                                <Link href={"/blogs/edit" + blog._id}> <button><FaEdit />
+                                                <Link href={"/blogs/edit/" + blog._id}> <button><FaEdit />
                                                 </button>
                                                 </Link>
-                                                <Link href={"/blogs/edit" + blog._id}><button><RiDeleteBin5Line />
+                                                <Link href={"/blogs/delete/" + blog._id}><button><RiDeleteBin5Line />
                                                 </button>
                                                 </Link>
                                             </td>

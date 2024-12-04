@@ -9,18 +9,29 @@ import toast from "react-hot-toast";
 import { ReactSortable } from "react-sortablejs";
 import { TiDelete } from "react-icons/ti";
 
-export default function Blog({ _id }) {
+export default function Blog({
+
+    _id,
+    title: exixtingTitle,
+    slug: exixtingSlug,
+    comments: exixtingComments,
+    status: exixtingStatus,
+    tags: exixtingTags,
+    blogCategory: exixtingBlogCategory,
+    description: exixtingDescription,
+    images: exixtingImages,
+}) {
     const [redirect, setRedirect] = useState(false);
     const router = useRouter();
 
-    const [title, setTitle] = useState("");
-    const [slug, setSlug] = useState("");
-    const [comments, setComments] = useState([]);
-    const [status, setStatus] = useState("");
-    const [tags, setTags] = useState([]);
-    const [blogcategory, setBlogcategory] = useState([]);
-    const [description, setDescription] = useState("");
-    const [images, setImages] = useState([]);
+    const [title, setTitle] = useState(exixtingTitle||"");
+    const [slug, setSlug] = useState(exixtingSlug||"");
+    const [comments, setComments] = useState(exixtingComments||[]);
+    const [status, setStatus] = useState(exixtingStatus||"");
+    const [tags, setTags] = useState(exixtingTags||[]);
+    const [blogcategory, setBlogcategory] = useState(exixtingBlogCategory||[]);
+    const [description, setDescription] = useState(exixtingDescription||"");
+    const [images, setImages] = useState(exixtingImages||[]);
 
     const [isUploading, setIsUploading] = useState(false);
     const uploadImageQueue = [];
